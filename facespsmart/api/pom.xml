@@ -13,6 +13,12 @@
 	<name>FACES P-SMART Module API</name>
 	<description>API project for FACESP-SMART</description>
 
+	<properties>
+
+		<webservicesRestVersion>2.0</webservicesRestVersion>
+
+	</properties>
+
 	<dependencies>
 	
 		<!-- 
@@ -22,7 +28,37 @@
 			<artifactId>library-name</artifactId>
 		</dependency> 
 		-->
+        <!-- Begin Module-->
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod</artifactId>
+			<version>${webservicesRestVersion}</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
 
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod-common</artifactId>
+			<version>${webservicesRestVersion}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod-1.8</artifactId>
+			<version>${webservicesRestVersion}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>webservices.rest-omod-common</artifactId>
+			<version>${webservicesRestVersion}</version>
+			<classifier>tests</classifier>
+			<scope>test</scope>
+		</dependency>
+		<!-- End Module-->
 		
 		
 

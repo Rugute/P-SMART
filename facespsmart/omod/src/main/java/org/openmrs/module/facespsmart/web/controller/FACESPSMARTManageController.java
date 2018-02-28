@@ -16,10 +16,10 @@ package org.openmrs.module.facespsmart.web.controller;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.api.context.Context;
+import org.openmrs.module.webservices.rest.web.RestConstants;
+import org.openmrs.module.webservices.rest.web.v1_0.controller.MainResourceController;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * The main controller.
@@ -28,9 +28,17 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class  FACESPSMARTManageController {
 	
 	protected final Log log = LogFactory.getLog(getClass());
-	
-	@RequestMapping(value = "/module/facespsmart/manage", method = RequestMethod.GET)
-	public void manage(ModelMap model) {
-		model.addAttribute("user", Context.getAuthenticatedUser());
+	private String ps= Context.getAuthenticatedUser().getFamilyName();
+
+	@RequestMapping("/rest/" + RestConstants.VERSION_1 + "/psmart")
+	public class FACESPSMARTResourceController extends MainResourceController {
+
+		/**
+		 * @see org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestController#getNamespace()
+		 */
+		@Override
+		public String getNamespace() {
+			return "v1/psmart";
+		}
 	}
 }

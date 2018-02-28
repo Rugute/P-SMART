@@ -17,7 +17,7 @@
 
 	
 	<!-- Module Activator -->
-	<activator>${project.parent.groupId}.${project.parent.artifactId}.FACESP-SMARTActivator</activator>
+	<activator>${project.parent.groupId}.${project.parent.artifactId}.FACESPSMARTActivator</activator>
 	
 	
 	<!-- Adds link to admin page -->
