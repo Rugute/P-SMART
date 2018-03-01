@@ -7,7 +7,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>FACES P-SMART Module</name>
-	<description>interface with P-SMART middleware</description>
+	<description>Rest service which it's used to interface with P-SMART middleware</description>
 	<url>https://wiki.openmrs.org/display/docs/FACES+P-SMART+Module+Module</url>
 	
 	<developers>
@@ -33,10 +33,14 @@
 	</modules>
 	
 	<properties>
+<<<<<<< HEAD
 		<openMRSVersion>1.11.6</openMRSVersion>
         <metadatadeployVersion>1.2</metadatadeployVersion>
         <metadatasharingVersion>1.1.8</metadatasharingVersion>
         <jacksonVersion>2.9.2</jacksonVersion>
+=======
+		<openMRSVersion>1.9.10</openMRSVersion>
+>>>>>>> 56fb629d763c26255979a47e5f730c9cd6ea7a64
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
@@ -53,6 +57,7 @@
 				<scope>compile</scope>
 			</dependency>
 			-->
+<<<<<<< HEAD
 			<!-- Begin OpenMRS modules -->
 
             <dependency>
@@ -91,10 +96,14 @@
 				<version>${webservicesRestVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+=======
+			<!-- Begin Module-->
+>>>>>>> 56fb629d763c26255979a47e5f730c9cd6ea7a64
 
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>webservices.rest-omod-1.8</artifactId>
+<<<<<<< HEAD
 				<version>${webservicesRestVersion}</version>
 				<scope>provided</scope>
 			</dependency>
@@ -126,6 +135,11 @@
             </dependency>
 
 			<!-- End OpenMRS modules -->
+=======
+			</dependency>
+
+			<!-- End Mobule-->
+>>>>>>> 56fb629d763c26255979a47e5f730c9cd6ea7a64
 			
 
 			<!-- Begin OpenMRS core -->

@@ -9,7 +9,11 @@ import javax.persistence.Lob;
 import java.sql.Timestamp;
 
 /**
+<<<<<<< HEAD
  * Created by rugute on 2/28/18.
+=======
+ * Created by rugute on 2/27/18.
+>>>>>>> 56fb629d763c26255979a47e5f730c9cd6ea7a64
  */
 public class PsmartStore extends BaseOpenmrsData {
     @Id
@@ -105,4 +109,8 @@ public class PsmartStore extends BaseOpenmrsData {
                 ", addendum='" + addendum + '\'' +
                 '}';
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 56fb629d763c26255979a47e5f730c9cd6ea7a64
