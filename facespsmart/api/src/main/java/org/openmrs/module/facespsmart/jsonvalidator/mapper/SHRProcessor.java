@@ -71,7 +71,7 @@ public class SHRProcessor {
 
         }
 
-        //NEXT_OF_KIN obs
+        //NEXT_OF_KIN
         String nokFirstName="";
         String nokMiddleName="";
         String nokLastLame="";
