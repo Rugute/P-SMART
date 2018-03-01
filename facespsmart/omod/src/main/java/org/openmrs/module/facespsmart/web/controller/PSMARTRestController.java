@@ -3,6 +3,7 @@ package org.openmrs.module.facespsmart.web.controller;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openmrs.api.context.Context;
+import org.openmrs.module.facespsmart.jsonvalidator.mapper.SHRProcessor;
 import org.openmrs.module.webservices.rest.SimpleObject;
 import org.openmrs.module.webservices.rest.web.RestConstants;
 import org.openmrs.module.webservices.rest.web.v1_0.controller.BaseRestController;
@@ -25,9 +26,11 @@ public class PSMARTRestController extends BaseRestController {
     @ResponseBody
     public Object receiveSHR(WebRequest request) {
 
-
+        SHRProcessor processSHR = new SHRProcessor();
+       processSHR.getOrCreatePatient();
 
         return new SimpleObject().add("sessionId", request.getSessionId()).add("authenticated", Context.isAuthenticated());
+
     }
 // Works perfect
     @RequestMapping(method = RequestMethod.GET, value = "/prepareshr")

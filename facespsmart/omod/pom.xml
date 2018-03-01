@@ -16,6 +16,7 @@
 	<properties>
 
 		<webservicesRestVersion>2.1</webservicesRestVersion>
+		<serializationxstreamVersion>0.2.7</serializationxstreamVersion>
 
 	</properties>
 
@@ -47,6 +48,7 @@
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>serialization.xstream-api</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>webservices.rest-omod</artifactId>
